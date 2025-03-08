@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card - Yashar Moshirfar 💡</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<!-- از طریق CDN JSDelivr -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('yashar.jpg') no-repeat center center/cover;
+            font-family: 'Vazir', sans-serif;
+            overflow: hidden;
+        }
+
+        .blur-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+        .contact-card {
+            position: relative;
+            max-width: 450px;
+            width: 90%;
+            padding: 30px;
+            background: rgba(17, 17, 17, 0.85);
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #ffd700;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #ffd700;
+            margin: 0 auto 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: rotate(360deg);
+        }
+
+        .contact-card h2 {
+            color: #ffd700;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: #ddd;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #ffd700;
+        }
+
+        .contact-info i {
+            margin-left: 10px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+
+        .btn-yellow {
+            background-color: #ffd700;
+            color: #000;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-yellow:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        @media (max-width: 576px) {
+            .contact-card {
+                padding: 20px;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+
+            .contact-card h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-info a {
+                font-size: 0.9rem;
+            }
+
+            .contact-info i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-bg"></div>
+    <div class="contact-card">
+        <img src="YasharMoshirfar.jpg" alt="Yashar Moshirfar" class="profile-pic">
+        <h2>Yashar Moshirfar</h2>
+        <p>Chief Creative Marketing and Branding Officer</p>
+        <div class="contact-info">
+<style>
+    /* ایجاد فاصله بین آیکون و متن */
+    .contact-links i {
+        margin-right: 10px;
+    }
+
+    /* تنظیمات لینکهای شبکههای اجتماعی */
+    .social-links {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    /* اختیاری - افکت هنگام هاور */
+    a:hover {
+        opacity: 0.8;
+    }
+</style>
+
+<div class="contact-info">
+    <div class="contact-links">
+        <a href="tel:+989362948090"><i class="fas fa-phone"></i>09362948090</a>
+        <a href="mailto:yashar@moshirfar.net"><i class="fas fa-envelope"></i>yashar@moshirfar.net</a>
+        <a href="https://www.moshirfar.net" target="_blank"><i class="fas fa-globe"></i>www.moshirfar.net</a>
+    </div>
+
+<div class="social-links">
+    <a href="https://linkedin.com/in/yasharmoshirfar" target="_blank" style="text-decoration: none;">
+        <i class="fab fa-linkedin" style="font-size: 2em; margin: 0 10px; color: #ffd700;"></i>
+    </a>
+    <a href="https://instagram.com/yasharmoshirfar" target="_blank" style="text-decoration: none;">
+        <i class="fab fa-instagram" style="font-size: 2em; margin: 0 10px; color: #ffd700;"></i>
+    </a>
+</div>
+</div>
+        </div>
+        <a href="https://moshirfar.net/contact/Yashar Moshirfar.vcf" class="btn-yellow" download="contact.vcf">➕ Add to Contact</a>
+    </div>
+</body>
+</html>
